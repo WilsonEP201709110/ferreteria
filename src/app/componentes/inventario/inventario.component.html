@@ -1,0 +1,162 @@
+<header>
+    <div class="navbar navbar-dark bg-dark shadow-sm">
+      <div class="container">
+        <a href="#" class="navbar-brand d-flex align-items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" fill="currentColor" class="bi bi-bank" viewBox="0 0 16 16">
+                <path d="M8 .95 14.61 4h.89a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v7a.5.5 0 0 1 .485.379l.5 2A.5.5 0 0 1 15.5 17H.5a.5.5 0 0 1-.485-.621l.5-2A.5.5 0 0 1 1 14V7H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 4h.89L8 .95zM3.776 4h8.447L8 2.05 3.776 4zM2 7v7h1V7H2zm2 0v7h2.5V7H4zm3.5 0v7h1V7h-1zm2 0v7H12V7H9.5zM13 7v7h1V7h-1zm2-1V5H1v1h14zm-.39 9H1.39l-.25 1h13.72l-.25-1z"/>
+            </svg>
+          <strong>&nbsp; Ferreteria : inventario </strong>
+        </a>
+      </div>
+    </div>
+</header>
+<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid-1x2-fill" viewBox="0 0 16 16">
+        <path d="M0 1a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V1zm9 0a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1V1zm0 9a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-5z"/>
+      </svg>
+    Ir..</button>
+
+<div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel" style="height: 200px; ">
+  <div class="offcanvas-header">
+    <h5 id="offcanvasTopLabel">Ferreteria :)</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="d-grid gap-2 col-6 mx-auto">
+                <button class="btn btn-dark fs-1" type="button" (click)="goInicio()">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                    <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                  </svg>Inicio</button>
+              </div>
+          </div>
+          <div class="col">
+            <div class="d-grid gap-2 col-10 mx-auto">
+                <button class="btn btn-success fs-1" type="button" (click)="goDespacho()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-truck" viewBox="0 0 16 16">
+                        <path d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                      </svg>
+                    Despacho</button>
+              </div>
+          </div>
+          <div class="col">
+            <div class="d-grid gap-2 col-10 mx-auto">
+                <button class="btn btn-secondary fs-1" type="button" (click)="goCaja()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                      </svg>
+                    caja</button>
+              </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+
+<div class="container-lg" style="padding: 2%;">
+<!-- Button trigger modal -->
+<div class="d-grid gap-2 col-6 mx-auto">
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Agregar producto
+    </button>
+      
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Nuevo producto</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Codigo:</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" >
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Nombre:</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" >
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Precio Compra:</label>
+                <input type="number" class="form-control" id="exampleFormControlInput1">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Precio Venta:</label>
+                <input type="number" class="form-control" id="exampleFormControlInput1">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Cantidad:</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" >
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Stock:</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" >
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Descripcion:</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Agregar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="container-lg">
+    
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Codigo</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Precio compra</th>
+                <th scope="col">Precio Venta</th>
+                <th scope="col">Cantidad</th>
+                <th scope="col">Descripcion</th>
+                <th scope="col">...</th>
+              </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th >ergd-45</th>
+                <th >Bolsa cemento UGC</th>
+                <th >Q 150.20</th>
+                <th >Q 180.20</th>
+                <th >150</th>
+                <th >Buena calidad</th>
+                <th ><button type="button" class="btn btn-warning btn-sm" style="margin-right: 10px;">Modificar</button>
+                    <button type="button" class="btn btn-danger btn-sm">Eliminar</button></th>
+              </tr>
+              <tr>
+                <th >sd-789</th>
+                <th >Bolsa de cal</th>
+                <th >Q 100.10</th>
+                <th >Q 130.20</th>
+                <th >350</th>
+                <th >Bien blanca</th>
+                <th ><button type="button" class="btn btn-warning btn-sm" style="margin-right: 10px;">Modificar</button>
+                    <button type="button" class="btn btn-danger btn-sm">Eliminar</button></th>
+              </tr>
+              <tr>
+                <th >etrr-124</th>
+                <th >Libra de alambre</th>
+                <th >Q 5.20</th>
+                <th >Q 7.20</th>
+                <th >1000</th>
+                <th >Alta durabilidad </th>
+                <th ><button type="button" class="btn btn-warning btn-sm" style="margin-right: 10px;">Modificar</button>
+                    <button type="button" class="btn btn-danger btn-sm">Eliminar</button></th>
+              </tr>
+        </tbody>
+    </table>
+</div>

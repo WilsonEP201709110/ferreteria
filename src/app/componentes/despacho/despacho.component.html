@@ -1,0 +1,82 @@
+<header>
+    <div class="navbar navbar-dark bg-dark shadow-sm">
+      <div class="container">
+        <a href="#" class="navbar-brand d-flex align-items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" fill="currentColor" class="bi bi-bank" viewBox="0 0 16 16">
+                <path d="M8 .95 14.61 4h.89a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v7a.5.5 0 0 1 .485.379l.5 2A.5.5 0 0 1 15.5 17H.5a.5.5 0 0 1-.485-.621l.5-2A.5.5 0 0 1 1 14V7H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 4h.89L8 .95zM3.776 4h8.447L8 2.05 3.776 4zM2 7v7h1V7H2zm2 0v7h2.5V7H4zm3.5 0v7h1V7h-1zm2 0v7H12V7H9.5zM13 7v7h1V7h-1zm2-1V5H1v1h14zm-.39 9H1.39l-.25 1h13.72l-.25-1z"/>
+            </svg>
+          <strong>&nbsp; Ferreteria : despacho </strong>
+        </a>
+      </div>
+    </div>
+</header>
+
+
+
+<div class="container-lg" style="padding: 2%; margin: 1%;">
+    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid-1x2-fill" viewBox="0 0 16 16">
+            <path d="M0 1a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V1zm9 0a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1V1zm0 9a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-5z"/>
+          </svg>
+        Ir..</button>
+    
+    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel" style="height: 200px; ">
+      <div class="offcanvas-header">
+        <h5 id="offcanvasTopLabel">Ferreteria :)</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <button class="btn btn-primary fs-1" type="button" (click)="goInicio()"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                        <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                      </svg>Inicio</button>
+                  </div>
+              </div>
+              <div class="col">
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <button class="btn btn-primary fs-1" type="button" (click)="goCaja()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                          </svg>
+                        Caja</button>
+                  </div>
+              </div>
+              <div class="col">
+                <div class="d-grid gap-2 col-10 mx-auto">
+                    <button class="btn btn-primary fs-1" type="button" (click)="goInventario()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-box-seam" viewBox="0 0 16 16">
+                            <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2l-2.218-.887zm3.564 1.426L5.596 5 8 5.961 14.154 3.5l-2.404-.961zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923l6.5 2.6zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464L7.443.184z"/>
+                          </svg>
+                        Inventario</button>
+                  </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="list-group fw-bolder">
+        <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+          Cola de despacho
+          <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+            3
+            <span class="visually-hidden">unread messages</span>
+          </span>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">Nombre: Emiliano, Direccion: villas manzana e, Telefono: 4598156, email: emi@gm.com
+            <span class="badge bg-success">*</span>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">Nombre: guillermo Valdez, Direccion: , Telefono: , email: 
+            <span class="badge bg-danger">*</span>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">Nombre: Gabriela, Direccion:linda vista manzana 4, Telefono: 4598156, email: 
+            <span class="badge bg-danger">*</span>
+        </a>
+      </div>
+</div>
+
